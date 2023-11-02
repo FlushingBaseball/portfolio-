@@ -7,7 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+
+## Client 
+./client/node_modules
+/client/node_modules
+client/node_modules
 node_modules
+./client/build
+/client/build
+/build
+build
+
+## dev
+.env
+ReactNotes.Md
+ProjectNotes.md
+
 dist
 dist-ssr
 *.local
