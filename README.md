@@ -1,1 +1,1 @@
-## portfolio$ (An Educational Stock trading game)
+## Portfolio$ (An Educational Stock trading game)
