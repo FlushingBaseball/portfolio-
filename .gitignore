@@ -37,3 +37,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+./portfolio-tracker
+portfolio-tracker
+portfolio-tracker/
+./portfolio-tracker/
