@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import HighchartsReact from 'highcharts-react-official';
 import Highcharts from 'highcharts/highstock';
 import axios from 'axios';
-import loading from '/assets/loading.svg';
+import loading from '/assets/loading.svg'
 
 const [isLoading, setIsLoading] = useState(true);
 const [chartOptions, setChartOptions] = useState({});
