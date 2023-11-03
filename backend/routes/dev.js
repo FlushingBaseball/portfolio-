@@ -1,0 +1,23 @@
+const express = require('express'),
+      router = express.Router();
+
+router.get('/hello', (req, res) => {
+  res.send({express : 'Sucessfully Conneted to Express Server'});
+});
+
+router.get('/ping', (req, res) => {
+  res.send('pong');
+})
+
+router.get('/auth', (req, res) => {
+  res.send({
+    user : req.user.username, 
+    authenticated : req.isAuthenticated()
+  })
+});
+
+router.get('/query', (req, res) =>{
+  res.send(req.query);
+});
+
+module.exports = router; 
