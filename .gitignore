@@ -22,6 +22,7 @@ build
 .env
 ReactNotes.Md
 ProjectNotes.md
+NodeNotes.md
 
 dist
 dist-ssr
