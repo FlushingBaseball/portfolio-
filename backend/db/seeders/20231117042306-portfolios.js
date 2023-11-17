@@ -3,23 +3,61 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
+    return queryInterface.bulkInsert('portfolio', 
+    [
+      {
+        name : 'First Portfolio',
+        user_id : 1,
+        public : true,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'Second Portfolio',
+        user_id : 1,
+        public : true,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'Third Portfolio',
+        user_id : 1,
+        public : false,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'First Portfolio',
+        user_id : 2,
+        public : true,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'Second Portfolio',
+        user_id : 2,
+        public : false,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'First Portfolio',
+        user_id : 3,
+        public : true,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+      {
+        name : 'Great Portfolio',
+        user_id : 4,
+        public : true,
+        created_at : new Date(),
+        updated_at : new Date()
+      },
+    ], {});
   },
 
   async down (queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    return queryInterface.bulkDelete('portfolio', null, {});
   }
 };
