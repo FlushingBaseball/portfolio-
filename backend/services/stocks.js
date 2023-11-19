@@ -1,6 +1,11 @@
 // Stock data taken from http://api.marketstack.com/v1/
 // there is no wrapper
 
+/**
+ * I need to do alot of research to fix this since World Trading Data no longer exists 
+ * I switched to marketstack but its not the same
+ */
+
 const
   // stocks
   forex = require('./forex'),
